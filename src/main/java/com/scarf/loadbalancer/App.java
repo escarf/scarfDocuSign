@@ -8,7 +8,7 @@ public class App {
 
 	public static void main(String[] args) {
 		App app = new App();
-		app.doWork(args);
+		System.out.println(app.doWork(args));
 	}
 
 	public String doWork(String[] input) {
