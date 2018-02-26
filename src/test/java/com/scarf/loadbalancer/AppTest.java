@@ -50,14 +50,14 @@ public class AppTest
     	String[] test = new String[0];
     	
     	String result = a.doWork(test);
-    	assertEquals(result, "X");
+    	assertEquals(result, "Please pass in a valid value");
     }
     public void testZero(){
     	App a = new App();
     	String[] test = new String[0];
     	
     	String result = a.doWork(test);
-    	assertEquals(result, "X");
+    	assertEquals(result, "Please pass in a valid value");
     }
     public void testSizeZero(){
     	App a = new App();
@@ -65,7 +65,7 @@ public class AppTest
     	test[0] = "X:0";
     	
     	String result = a.doWork(test);
-    	assertEquals(result, "X");
+    	assertEquals(result, "No server space available");
     }
     public void IncludesZero(){
     	App a = new App();
